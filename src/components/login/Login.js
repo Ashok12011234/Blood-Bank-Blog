@@ -38,7 +38,7 @@ const Login = () => {
         localStorage.setItem("type", JSON.stringify("bloodBank"));
         alert("logged in");
 
-        window.open("/bank/welcome", "_self");
+        window.open("/bank/welcome");
       }
     });
   };
