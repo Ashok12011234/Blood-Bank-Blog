@@ -36,7 +36,7 @@ const Login = () => {
         setUsernameState(Username);
         localStorage.setItem("username", JSON.stringify(Username));
         localStorage.setItem("type", JSON.stringify("bloodBank"));
-        alert("logged in");
+        //alert("logged in");
 
         window.open("/bank/welcome", "_self");
       }
