@@ -17,7 +17,7 @@ const Login = () => {
   const submitCredentials = (e) => {
     // setUsernameContext(Username);
     e.preventDefault();
-    if (Username === "admin" && Password === "admin1234") {
+    if (Username === "admin" && Password === "admin") {
       localStorage.setItem("username", JSON.stringify(Username));
       localStorage.setItem("type", JSON.stringify("admin"));
       window.open("/admin/dashboard", "_self");
@@ -38,7 +38,7 @@ const Login = () => {
         localStorage.setItem("type", JSON.stringify("bloodBank"));
         alert("logged in");
 
-        window.open("/bank/welcome");
+        window.open("/bank/welcome", "_self");
       }
     });
   };
